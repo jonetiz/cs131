@@ -1,0 +1,12 @@
+    1  wget www.github.com
+    2  sudo apt get
+    3  sudo apt install git-all
+    4  sudo apt install git
+    5  ls
+    6  dir
+    7  pwd
+    8  mkdir cs131
+    9  cd cs131
+   10  git init
+   11  mkdir Worksheet1
+   12  history > Worksheet1/cmds.log
