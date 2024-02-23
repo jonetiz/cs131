@@ -1,0 +1,62 @@
+    1  ls
+    2  cd ~
+    3  ls
+    4  cd ..
+    5  ls
+    6  cd ..
+    7  ls
+    8  cd ..
+    9  ls
+   10  cd ..
+   11  ls
+   12  cd ~
+   13  cd /
+   14  cd /mnt
+   15  ls
+   16  cd c
+   17  ls
+   18  cd "Program Files"
+   19  cd Steam
+   20  cd ..
+   21  cd Users
+   22  cd dittl
+   23  cd desktop
+   24  ls
+   25  cat Assignment1.pdf
+   26  ls
+   27  vi 'git pat.txt'
+   28  cat 'git pat.txt'
+   29  cls
+   30  clear
+   31  echo `pwd`
+   32  pwd
+   33  echo $HOME
+   34  clear
+   35  ls
+   36  cd ~
+   37  ls
+   38  cd cs131
+   39  ls
+   40  mkdir Worksheet2
+   41  cd Worksheet2
+   42  clear
+   43  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+   44  ls
+   45  grep '$3 ~ /United States/' "Global YouTube Statistics.csv" 
+   46  ls
+   47  grep
+   48  grep --help
+   49  grep -G '$3 ~ /United States/' "Global YouTube Statistics.csv" 
+   50  grep "United States" "Global YouTube Statistics.csv"
+   51  grep "United States" "Global YouTube Statistics.csv" > us_youtubers.txt
+   52  ls
+   53  view us_youtubers.txt
+   54  grep "Music" "Global YouTube Statistics.csv" > music_youtubers.txt
+   55  wc music_youtubers.txt
+   56  grep "Music" "Global YouTube Statistics.csv" | wc
+   57  grep "Music" "Global YouTube Statistics.csv" | wc > counts.txt
+   58  grep "United States" "Global YouTube Statistics.csv" | wc > counts.txt
+   59  grep "Music" "Global YouTube Statistics.csv" | wc >> counts.txt
+   60  vi counts.txt
+   61  cat counts.txt
+   62  history > cmds.log

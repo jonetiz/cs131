@@ -1,0 +1,6 @@
+Line   Word   Chars
+-------------------
+301    1442   62815
+237     824   45809
+
+First line is the wc command for the United States youtubers, second line is the wc command for Music youtubers.
