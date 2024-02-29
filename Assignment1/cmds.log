@@ -1,0 +1,52 @@
+Assignment 1 Starts Here
+------------------------ 
+   94  pwd
+   95  ls
+   96  cd cs131
+   97  mkdir Assignment1
+   98  cd Assignment1/
+   99  vi Assignment1.txt
+  100  echo $SHELL
+  101  vi Assignment1.txt 
+  102  id
+  103  vi Assignment1.txt 
+  104  mkdir myDir
+  105  chmod u-w myDir
+  106  cd myDir
+  107  ls
+  108  ls -l
+  109  touch test.txt
+  110  cd ..
+  111  vi Assignment1.txt 
+  112  mkdir myDir2
+  113  mkdir myDir3
+  114  cd myDir2
+  115  touch myFile.txt
+  116  mv myFile.txt ../myDir3
+  117  cd ..
+  118  cd myDir3
+  119  ls
+  120  cd ..
+  121  vi Assignment1.txt 
+  122  free
+  123  vi Assignment1.txt 
+  124  free -b
+  125  free -k
+  126  free -m
+  127  free -b
+  128  free -h
+  129  free -m
+  130  vi Assignment1.txt 
+  131  cd /etc
+  132  ls
+  133  view os-release 
+  134  cd ~/cs131/Assignment1/
+  135  vi Assignment1.txt 
+  136  cd /etc
+  137  ls -l
+  138  vi Assignment1.txt 
+  139  cd ~/cs131/Assignment1/
+  140  vi Assignment1.txt 
+  141  stat /etc/os-release
+  142  vi Assignment1.txt 
+  143  history > cmds.log

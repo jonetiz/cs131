@@ -1,0 +1,59 @@
+1) Make a directory Assignment1 under cs131 directory and change it. All your homework for this assignment will be done there.
+
+Commands used: mkdir Assignment1; cd Assignment1
+
+2) Echo your home directory path and paste the output of the command.  Which commands did you use?
+
+echo $SHELL output '/bin/bash'
+
+3) What is your UID?  To what group(s) do you belong?  How did you find out (command used)?
+
+uid=1000(jon) gid=1000(jon) groups=1000(jon),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),116(netdev)
+
+Used command id, my UID is 1000, groups are 1000, 4, 20, 24, 25, 27, 29, 30, 44, 46, 116.
+
+4) Create a new directory "myDir" under the Assignment 1 folder. Now remove "write" permission for yourself.(see chmod man page) 
+
+From this temp directory, are you allowed to cd in that directory? Can you "ls" it?  Can you "ls -l" it? Can you create files under it?
+
+mkdir myDir
+chmod u-w myDir
+
+I am able to cd, ls, and ls -l into the directory, but trying "touch test.txt" did not work with permission denied.
+
+5) Create a new directory "myDir2" and create a new directory "myDir3" 
+
+mkdir myDir2; mkdir myDir3
+
+6) Inside myDir2, create a file "myFile.txt" (use 'touch' or 'vi' command). Once done, move this file from myDir2 to myDir3 using the mv command.
+
+mv myFile.txt ../myDir3
+
+6) Find the total amount of RAM/Memory in the IBM VM using the 'free' command. Display the amount of memory in mebibytes.
+
+(Use 'man free' command to learn about it)
+
+               total        used        free      shared  buff/cache   available
+Mem:            2905         504        1939           3         461        2248
+Swap:           1024           0        1024
+
+Used "free -m", there are 2,905 total Mebibytes (for grader, please note that this is correct, I am not using the IBM vm so will have a different value from other students)
+
+9) Identify the operating system version. Which file under /etc/ contains this information?
+
+/etc/os-release contained a variety of version info, my Linux system is on Ubuntu 22.04.3 LTS
+
+10) What is the permission (given to all users) for the file containing the OS version information
+
+After running "stat /etc/os-release" I got
+
+  File: /etc/os-release -> ../usr/lib/os-release
+  Size: 21              Blocks: 0          IO Block: 4096   symbolic link
+Device: 820h/2080d      Inode: 594         Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2024-02-29 09:25:12.340387239 -0800
+Modify: 2023-08-02 06:14:26.000000000 -0700
+Change: 2024-02-07 12:15:06.568685364 -0800
+Birth: 2024-02-07 12:15:06.568685364 -0800
+
+777 means everyone can read, write, and execute.
