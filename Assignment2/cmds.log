@@ -1,0 +1,34 @@
+Assignment 2 Starts here
+---
+  158  mkdir Assignment2
+  159  cd Assignment2
+- Q1
+  160  find /etc -type f > one.txt 2> two.txt
+  161  vi Assignment2.txt
+  162  cat one.txt
+  163  cat two.txt
+  164  vi Assignment2.txt
+- Q2
+  165  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  166  cat 'Global YouTube Statistics.csv'
+  167  head 'Global YouTube Statistics.csv' 
+  168  cut -d: -f20 'Global YouTube Statistics.csv' 
+  169  head 'Global YouTube Statistics.csv' | cut -d, -f20
+  170  cat 'Global YouTube Statistics.csv' | cut -d, -f20
+  171  cat 'Global YouTube Statistics.csv' | cut -d, -f20-21
+  172  cat 'Global YouTube Statistics.csv' | cut -d, -f20-21 | sort
+  173  cat 'Global YouTube Statistics.csv' | cut -d, -f20-21 | uniq -c
+  174  cat 'Global YouTube Statistics.csv' | cut -d, -f20-21 | sort | uniq -c
+  175* cat 'Global YouTube Statistics.csv' | cut -d, -f20-21 | uniq -c | sort -
+  176  cat 'Global YouTube Statistics.csv' | cut -d, -f20-21 | uniq -c | sort -r
+  177  cat 'Global YouTube Statistics.csv' | cut -d, -f20-21 | uniq -c
+  178  cat 'Global YouTube Statistics.csv' | cut -d, -f20-21 | sort | uniq -c
+  179  cat 'Global YouTube Statistics.csv' | cut -d, -f20-21 | sort | uniq -c | sort
+  180  vi Assignment2.txt 
+- Q3
+  181  ps -u jon
+  182  vi Assignment2.txt 
+- (Q4 was run on another instance)
+- Q5/Q6
+  183  ps aux
+  184  history > cmds.log

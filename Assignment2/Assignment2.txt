@@ -1,0 +1,40 @@
+1.
+a. This finds files in /etc and its subdirectories, outputs the results to one.txt and errors to two.txt.
+b. one.txt contains the results, and two.txt contains errors such as permission denied.
+---
+2. The command used was `cat 'Global YouTube Statistics.csv' | cut -d, -f20-21 | sort | uniq -c | sort`, which displays the contents of Global YouTube Statistics.csv, removes all data except columns 20 and 21 (created date and month), sorts them, counts unique occurences, then sorts again so it's easy to find maximums.
+
+The top three months of YouTube channel creation were:
+
+3. 12 2014,Aug
+2. 13 2014,Jul
+1. 15 2006,Mar
+
+Where the first number represents how many.
+---
+3. I used 'ps -u jon'
+
+PID TTY          TIME CMD
+    381 pts/0    00:00:00 bash
+    440 ?        00:00:00 systemd
+    441 ?        00:00:00 (sd-pam)
+    446 pts/1    00:00:00 bash
+   5055 pts/0    00:00:00 ps
+
+---
+4. I used 'ps -u jon'
+
+PID TTY          TIME CMD
+    381 pts/0    00:00:00 bash
+    440 ?        00:00:00 systemd
+    441 ?        00:00:00 (sd-pam)
+    446 pts/1    00:00:00 bash
+   5107 pts/0    00:00:00 vi
+   5230 pts/2    00:00:00 bash
+   5280 pts/2    00:00:00 ps
+
+The PID was 5107. After quitting vi, it was no longer in the process list because the program was no longer running.
+---
+5. The init process in linux (PID 1) is what gets Linux to run. To find it, I used 'ps aux' and it was at the top, owned by root.
+---
+6. ps aux displays ALL running process on the linux machine. It will show the owner, PID, current resource (CPU/Memory) usage, runtime, process location, and some other details. 
