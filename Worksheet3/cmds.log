@@ -1,0 +1,105 @@
+    1  mkdir Worksheet3
+    2  cd Worksheet
+    3  cd Worksheet3
+    4  cd ..
+    5  cd Worksheet2
+    6  ls
+    7  cd ..
+    8  ls
+    9  cd Assignment2
+   10  ls
+   11  cp 'Global YouTube Statistics.csv' ../Worksheet3/'Global YouTube Statistics.csv'
+   12  cd ..
+   13  cd Worksheet3
+   14  ls
+   15  head 'Global YouTube Statistics.csv' 
+   16  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16
+   17  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep "United States|India|United Kingdom"
+   18  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep "United States|IndiaUnited Kingdom"
+   19  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -e'United States|India|United Kingdom'
+   20  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -e 'United States|India|United Kingdom'
+   21  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -e 'United States|India|United Kingdom' > test.txt
+   22  cat test.txt
+   23  rm test.txt
+   24  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom'
+   25  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom' | sort -k 3
+   26* 
+   27  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom' | sort -k 3
+   28  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom' | sort -u -k3
+   29  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom' | sort -k3
+   30  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -k3
+   31  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -k3 -r
+   32  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -k3 -r -n
+   33  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -k3 -n
+   34  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -n -k3
+   35  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -nr -k3,3
+   36  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -nr -k3
+   37  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -n -k 3
+   38  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -n
+   39  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -n -k3 -u
+   40  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | sort -n -k3 | grep -E 'United States|India|United Kingdom' | tr ',' '\t'
+   41  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | sort -n -k3 | tr ',' '\t' | grep -E 'United States|India|United Kingdom'
+   42  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -n -k3
+   43  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -n -k3
+   44  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -n -k3,3 -k2,2
+   45  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -n -k2,2 -k1,1
+   46  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -n -k1
+   47  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -n -k 3
+   48  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -k 3 -n
+   49  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -k 3 -n | head
+   50  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -nk3 | head
+   51  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -n -k3,3 | head
+   52  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States|India|United Kingdom' | sort -n -k3,3 | head
+   53  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -n -k3,3 | head
+   54  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -nr -k3,3 | head
+   55  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -nr -k3,3
+   56  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States' | tr ',' '\t' | sort -nr -k3,3
+   57  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States' | tr ',' '\t' | sort -nr -k3,3 | head
+   58  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States' | tr ',' '\t' | sort -n -k3 | head
+   59  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States' | tr ',' '\t' | sort -n -k3 | head
+   60  help sort
+   61  info sort
+   62  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States' | tr ',' '\t' | sort -k3 | head
+   63  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States' | tr ',' '\t' | sort -k3 -r | head
+   64  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States' | tr ',' '\t' | sort -k3 -nr | head
+   65  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States' | tr ',' '\t' | sort -k3 -nr -u | head
+   66  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States' | tr ',' '\t' | sort -k3 -nr | head
+   67  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States' | tr ',' '\t' | sort -k3 -r -V | head
+   68  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -r -V -k3
+   69  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -r -V -k3 | head
+   70  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States' | tr ',' '\t' | sort -k3 -r -V | head
+   71  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States|India|United Kingdom' | tr ',' '\t' | sort -k3 -r -V | head
+   72  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'India' | tr ',' '\t' | sort -k3 -r -V | head
+   73  cat 'Global YouTube Statistics.csv' | cut -d, -f2,8,16 | grep -E 'India' | tr ',' '\t' | sort -k3 -r -V | head
+   74  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'India' | tr ',' '\t' | sort -k3 -r -V | head
+   75  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States' | tr ',' '\t' | sort -k3 -r -V | head
+   76  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United Kingdom' | tr ',' '\t' | sort -k3 -r -V | head
+   77  vi ws3.txt
+   78  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'India|United States|United Kingdom' | tr ',' '\t' | sort -k3 -r -V | head
+   79  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'India|United States|United Kingdom' | tr ',' '\t' | sort -k3 -k2 -r -V | head
+   80  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'India|United States|United Kingdom' | tr ',' '\t' | sort -k3,3 -k2,2 -r -V | head
+   81  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'India|United States|United Kingdom' | tr ',' '\t' | sort -k2 -k3 -r -V | head
+   82  vi ws3.txt
+   83  head 'Global YouTube Statistics.csv' 
+   84  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United Kingdom' | tr ',' '\t' | sort -k3 -r -V | head -1
+   85  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United Kingdom' | tr ',' '\t' | sort -k3 -r -V | head -1 >> ws3.txt 
+   86  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'India' | tr ',' '\t' | sort -k3 -r -V | head -1 >> ws3.txt 
+   87  cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States' | tr ',' '\t' | sort -k3 -r -V | head -1 >> ws3.txt 
+   88  vi ws3.txt 
+   89  cat 'Global YouTube Statistics.csv' | cut -d, -f3,5 | grep -E 'Sports|Education|Entertainment' | head
+   90  cat 'Global YouTube Statistics.csv' | cut -d, -f2,3,5 | grep -E 'Sports|Education|Entertainment' | head
+   91  cat 'Global YouTube Statistics.csv' | cut -d, -f2,3,5 | grep -E 'Sports|Education|Entertainment' | tr ',' '\t' | head
+   92  cat 'Global YouTube Statistics.csv' | cut -d, -f2,3,5 | grep -E 'Sports|Education|Entertainment' | tr ',' '\t' | sort -k2 -V -r | head
+   93  cat 'Global YouTube Statistics.csv' | cut -d, -f2,3,5 | grep -E 'Sports' | tr ',' '\t' | sort -k2 -V -r | head
+   94  cat 'Global YouTube Statistics.csv' | cut -d, -f2,3,5 | grep -E 'Sports' | tr ',' '\t' | sort -k2 -V -r | head >> ws3.txt 
+   95  cat 'Global YouTube Statistics.csv' | cut -d, -f2,3,5 | grep -E 'Education' | tr ',' '\t' | sort -k2 -V -r | head >> ws3.txt 
+   96  cat 'Global YouTube Statistics.csv' | cut -d, -f2,3,5 | grep -E 'Entertainment' | tr ',' '\t' | sort -k2 -V -r | head >> ws3.txt 
+   97  vi ws3.txt 
+   98  cat 'Global YouTube Statistics.csv' | cut -d, -f2,3,5 | grep -E 'Entertainment' | tr ',' '\t' | sort -k2 -V -r | head
+   99  cat 'Global YouTube Statistics.csv' | cut -d, -f2,3,5 | grep -E 'Entertainment' | tr ',' '\t' | sort -k2 -n -r | head
+  100  cat 'Global YouTube Statistics.csv' | cut -d, -f2,3,5 | grep -E 'Entertainment' | tr ',' '\t' | sort -k2 -nr | head
+  101  cat 'Global YouTube Statistics.csv' | cut -d, -f2,3,5 | grep -E 'Entertainment' | tr ',' '\t' | sort -k2 -nr | head -1 >> ws3.txt 
+  102  cat 'Global YouTube Statistics.csv' | cut -d, -f2,3,5 | grep -E 'Sports' | tr ',' '\t' | sort -k2 -nr | head -1 >> ws3.txt 
+  103* cat 'Global YouTube Statistics.csv' | cut -d, -f2,3,5 | grep -E 'Education' | tr ',' '\t' | sort -k2 
+  104  vi ws3.txt 
+  105  history > cmds.log

@@ -1,0 +1,21 @@
+Task 1
+---
+
+cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United Kingdom' | tr ',' '\t' | sort -k3 -r -V | head -1
+cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'United States' | tr ',' '\t' | sort -k3 -r -V | head -1
+cat 'Global YouTube Statistics.csv' | cut -d, -f1,8,16 | grep -E 'India' | tr ',' '\t' | sort -k3 -r -V | head -1
+
+846	United Kingdom	2000000
+1	India	9000000
+418	United States	9200000
+
+Task 2
+---
+
+cat 'Global YouTube Statistics.csv' | cut -d, -f2,3,5 | grep -E 'Entertainment' | tr ',' '\t' | sort -k2 -nr | head -1 >> ws3.txt
+cat 'Global YouTube Statistics.csv' | cut -d, -f2,3,5 | grep -E 'Sports' | tr ',' '\t' | sort -k2 -nr | head -1 >> ws3.txt
+cat 'Global YouTube Statistics.csv' | cut -d, -f2,3,5 | grep -E 'Education' | tr ',' '\t' | sort -k2 -nr | head -1 >> ws3.txt
+
+MrBeast	166000000	Entertainment
+WWE	96000000	Sports
+TED-Ed	18800000	Education
