@@ -1,5 +1,3 @@
-Hello, John Doe!
-Hi, Jane Doe!
-Greetings, John Smith!
-Hello, Michael Johnson!
-Hi, Emily Davis!
+Greetings, John Smith! (edited)
+Hi, Michael Johnson! (edited)
+Hi, Emily Davis! (edited)
