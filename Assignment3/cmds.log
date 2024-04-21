@@ -1,0 +1,98 @@
+  326  mkdir Assignment3
+  327  cd Assignment3
+  328  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/last.fake
+  329  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/passwd.fake
+  330  ls
+  331  touch Assignment3.txt
+  332  head last.fake
+  333  awk '/*sp24 /' last.fake 
+  334  awk '/sp24 /' last.fake 
+  335  awk '/*sp24 /' last.fake > lastsp24.fake
+  336  vi Assignment3.txt 
+  337  wc -l last.fake 
+  338  wc -l lastsp24.fake 
+  339  head lastsp24.fake
+  340  awk '/*sp24 / {print}' last.fake > lastsp24.fake
+  341  head lastsp24.fake
+  342  ls
+  343  vi lastsp24.fake 
+  344  awk '/*sp24 / > lastsp24.fake' last.fake
+  345  awk '/*sp24 / BEGIN {print > lastsp24.fake}' last.fake
+  346  awk '/*sp24 / BEGIN {print > "lastsp24.fake"}' last.fake
+  347  awk '/*sp24 / {print > "lastsp24.fake"}' last.fake
+  348  vi lastsp24.fake 
+  349  ls
+  350  cat lastsp24.fake 
+  351  awk '/*sp24 / > lastsp24.fake'
+  352* awk '/sp24 /' last.fake 
+  353  awk '/sp24 / {print > "lastsp24.fake"}' last.fake
+  354  cat lastsp24.fake 
+  355  wc last.fake
+  356  wc lastsp24.fake 
+  357  vi Assignment3.txt 
+  358  cat lastsp24.fake | grep '\Sun \'
+  359  cat lastsp24.fake | grep 'Sun '
+  360  cat lastsp24.fake | grep 'Sun ' | awk '{print $1}'
+  361  cat lastsp24.fake | grep 'Sun ' | awk '{print $1}' | uniq
+  362  vi task2.awk
+  363  vi task2.awk
+  364  awk -f task2.awk lastsp24.fake 
+  365  cat lastsp24.fake | grep 'Sun ' | awk 'BEGIN{print "Test"}{print $1}' | uniq
+  366  cat lastsp24.fake | grep 'Sun ' | awk 'BEGIN{print "The list of people who worked on Sunday are:"}{print $1}{print "Kudos to these people for putting in the work"}' | uniq
+  367  cat lastsp24.fake | grep 'Sun ' | awk 'BEGIN{print "The list of people who worked on Sunday are:"}{print $1}END{print "Kudos to these people for putting in the work"}' | uniq
+  368  rm task2.awk 
+  369  vi Assignment3.txt 
+  370  vi Assignment3.txt 
+  371  cat lastsp24.fake 
+  372  awk '/(23:?? -|00:?? -|01:?? -|02:?? -|03:?? -|04:00)/ ' lastsp24.fake 
+  373  awk '/(23:[0-9][0-9] -|00:[0-9][0-9] -|01:[0-9][0-9] -|02:[0-9][0-9] -|03:[0-9][0-9] -|04:00 -)/ ' lastsp24.fake 
+  374  awk '/(23:[0-9][0-9] -|00:[0-9][0-9] -|01:[0-9][0-9] -|02:[0-9][0-9] -|03:[0-9][0-9] -|04:00 -)/ {print $1}' lastsp24.fake |uniq
+  375  awk '/(23:[0-9][0-9] -|0[0-3]:[0-9][0-9] -|04:00 -)/ BEGIN{print "Night Owls List:"} {print $1} END{print "Night Owls are dope. Please ensure you get enough sleep though."}' lastsp24.fake | uniq
+  376* awk '/0[5-8]:[0-9][0-9] -|09:00 -)/ BEGIN {print "Early Birds List:"} {print $1} END{print "Early Birds are dope. Please ensure you get enough sleep though."}' lastsp24.fake | uniq
+  377* awk '/(23:[0-9][0-9] -|0[0-3]:[0-9][0-9] -|04:00 -)/' lastsp24
+  378  vi Assignment3.txt 
+  379  vi Assignment3.txt 
+  380  awk '/(0[5-8]:[0-9][0-9] -|09:00 -)/' lastsp24.fake | awk 'BEGIN{print "Early Birds List:"} {print $1} END{print "Early Birds are dope. Please ensure you get enough sleep though."}' | uniq
+  381  vi Assignment3.txt 
+  382  vi Assignment3.txt 
+  383  head passwd.fake 
+  384  head lastsp24.fake 
+  385  grep 't*sp24' lastsp24.fake
+  386  grep 't*sp24' lastsp24.fake
+  387  awk '/t*sp24/' lastsp24.fake 
+  388  awk '/t*sp24 /' lastsp24.fake 
+  389  awk '/t.*sp24/' lastsp24.fake 
+  390  awk '/^t.*sp24/' lastsp24.fake 
+  391  awk '/^t.*sp24/' lastsp24.fake | awk '{print $1}' | uniq
+  392  awk '/^t.*sp24/' lastsp24.fake | awk '{print $1}' | uniq -u
+  393  awk '/^t.*sp24/' lastsp24.fake | awk '{print $1}' | uniq -u
+  394* awk '/^t.*sp24/' lastsp24.fake | awk '{print $1}' | uniq
+  395  awk '/^t.*sp24 /' lastsp24.fake | awk '{print $1}' | uniq -u
+  396  awk '/^t.*sp24/' lastsp24.fake | awk '{print $1}' | uniq -u
+  397  awk '/^t.*sp24/' lastsp24.fake | awk '{print $1}' | sort -u
+  398  vi Assignment3.txt 
+  399  vi Assignment3.txt 
+  400  awk '/(0[5-8]:[0-9][0-9] -|09:00 -)/' lastsp24.fake | awk 'BEGIN{print "Early Birds List:"} {print $1} END{print "Early Birds are dope. Please ensure you get enough sleep though."}' | sort -u
+  401  awk '/(0[5-8]:[0-9][0-9] -|09:00 -)/' lastsp24.fake | awk 'BEGIN{print "Early Birds List:"} {print $1} END{print "Early Birds are dope. Please ensure you get enough sleep though."}' | uniq -u
+  402  awk '/(0[5-8]:[0-9][0-9] -|09:00 -)/' lastsp24.fake | awk 'BEGIN{print "Early Birds List:"} {print $1; sort -u} END{print "Early Birds are dope. Please ensure you get enough sleep though."}'
+  403  awk '/(0[5-8]:[0-9][0-9] -|09:00 -)/' lastsp24.fake | awk 'BEGIN{print "Early Birds List:"} {print $1; sort -u} END{print "Early Birds are dope. Please ensure you get enough sleep though."}' | uniq
+  404* awk '/(0[5-8]:[0-9][0-9] -|09:00 -)/' lastsp24.fake | awk 'BEGIN{print "Early Birds List:"} {print $1; sort -u} END{print "Early Birds are dope. Please ensure you get enough sleep though."}' | uniq -
+  405  cat passwd.fake 
+  406  head passwd.fake 
+  407  awk '/^a.*:.*:[!:]:/' passwd.fake 
+  408  awk '/^a.*:.*:[!:]/' passwd.fake 
+  409  vi Assignment3.txt 
+  410  vi Assignment3.txt 
+  411  sed '/[a-zA-Z 0-9]/d' passwd.fake | sort -u
+  412  passwd.fake
+  413  cat passwd.fake 
+  414  sed '/[a-zA-Z 0-9]/d' passwd.fake
+  415  sed 's/[a-zA-Z 0-9]/g' passwd.fake
+  416  sed 's[a-zA-Z 0-9]/g' passwd.fake
+  417  sed 's|[a-zA-Z 0-9]|g' passwd.fake
+  418  sed '/[a-zA-Z 0-9]/g' passwd.fake
+  419  sed '/[a-zA-Z 0-9]/dg' passwd.fake
+  420  sed 's/[a-zA-Z 0-9]//g' passwd.fake
+  421  sed 's/[a-zA-Z 0-9]//g' passwd.fake | sort -u
+  422  vi Assignment3.txt 
+  423  history > cmds.log
