@@ -1,0 +1,89 @@
+  326  cd CS131ClassProject7/
+  327  ls
+  328  touch plots.txt
+  329  vi plots.txt 
+  330  cat spotify_top_songs_audio_features.csv 
+  331  head spotify_top_songs_audio_features.csv 
+  332  sed -i 's/, /#/g' spotify_top_songs_audio_features.csv 
+  333  sed -i 's/,/, /g' spotify_top_songs_audio_features.csv 
+  334  sed -i 's/#/,/g' spotify_top_songs_audio_features.csv 
+  335  head spotify_top_songs_audio_features.csv 
+  336  awk -F ',' '{print $15, $18, $19}' spotify_top_songs_audio_features.csv 
+  337  awk -F ',' '{print $15, $18, $19}' spotify_top_songs_audio_features.csv | head
+  338  awk -F ',' '{print $15, $18, $19}' spotify_top_songs_audio_features.csv | head
+  339  awk -F ',' '{print $15, $18, $19}' spotify_top_songs_audio_features.csv | head
+  340  awk -F ',' '{print $15, $19, $20}' spotify_top_songs_audio_features.csv | head
+  341  awk -F ',' '{print $15, $19, $20}' spotify_top_songs_audio_features.csv | head
+  342  sed -i 's/, /#/g' spotify_top_songs_audio_features.csv 
+  343  sed -i 's/,/, /g' spotify_top_songs_audio_features.csv 
+  344  sed -i 's/#/,/g' spotify_top_songs_audio_features.csv 
+  345  awk -F ',' '{print $15, $19, $20}' spotify_top_songs_audio_features.csv | head
+  346  awk -F ',' '{print $15, $20}' spotify_top_songs_audio_features.csv | head
+  347  head spotify_top_songs_audio_features.csv
+  348  awk -F ',' '{print $15, $20}' spotify_top_songs_audio_features.csv | head
+  349  awk -F ',' '{print $15, $20}' spotify_top_songs_audio_features.csv > loudness_plot.csv
+  350  vi loudness_plot.csv 
+  351  awk -F ',' '{print $15 ", " $20}' spotify_top_songs_audio_features.csv | head
+  352  awk -F ',' '{print $15 ", " $20}' spotify_top_songs_audio_features.csv | head
+  353  awk -F ',' '{print $15 ", " $20}' spotify_top_songs_audio_features.csv | head
+  354  sed -i 's/, /#/g' spotify_top_songs_audio_features.csv 
+  355  sed -i 's/,/, /g' spotify_top_songs_audio_features.csv 
+  356  sed -i 's/#/,/g' spotify_top_songs_audio_features.csv 
+  357  awk -F ',' '{print $15 ", " $20}' spotify_top_songs_audio_features.csv | head
+  358  awk -F ',' '{print $15 ", " $20}' spotify_top_songs_audio_features.csv > loudness_plot.csv 
+  359  awk -F ',' '{print $8 ", " $20}' spotify_top_songs_audio_features.csv > danceability_plot.csv 
+  360  awk -F ',' '{print $16 ", " $20}' spotify_top_songs_audio_features.csv > tempo_plot.csv 
+  361  awk -F ',' '{print $9 ", " $20}' spotify_top_songs_audio_features.csv > energy_plot.csv 
+  362  awk -F ',' '{print $9 ", " $17}' spotify_top_songs_audio_features.csv > duration_plot.csv 
+  363  head duration_plot.csv 
+  364  sed -i 's/, /#/g' spotify_top_songs_audio_features.csv
+  365  sed -i 's/,/, /g'
+  366  sed -i 's/#/,/g' spotify_top_songs_audio_features.csv
+  367  sed -i 's/,/, /g' spotify_top_songs_audio_features.csv
+  368  awk -F ',' '{print $9 ", " $17}' spotify_top_songs_audio_features.csv > duration_plot.csv 
+  369  head duration_plot.csv 
+  370  head duration_plot.csv 
+  371  head spotify_top_songs_audio_features.csv
+  372  awk 'BEGIN { FPAT = "([^, ]+)|(\"[^\"]+\")" } END { print }' spotify_top_songs_audio_features.csv
+  373  awk -F'([^,]*)|("[^"]+")' spotify_top_songs_audio_features.csv
+  374  awk -F '([^,]*)|("[^"]+")' spotify_top_songs_audio_features.csv
+  375  awk -F'([^,]*)|("[^"]+")' '{print}' spotify_top_songs_audio_features.csv
+  376  awk -F'([^,]*)|("[^"]+")' '{print}' spotify_top_songs_audio_features.csv | head
+  377  awk -F'([^,]*)|("[^"]+")' '{print $8, $19}' spotify_top_songs_audio_features.csv | head
+  378  awk -F '([^,]*)|("[^"]+")' '{print $8, $20}' spotify_top_songs_audio_features.csv | head
+  379  awk -F '([^,]*)|("[^"]+")' '{print $8, $19}' spotify_top_songs_audio_features.csv | head
+  380  sed -i 's/, /#/g' spotify_top_songs_audio_features.csv
+  381  sed -i 's/,/, /g' spotify_top_songs_audio_features.csv
+  382  sed -i 's/#/,/g' spotify_top_songs_audio_features.csv
+  383  awk -F '([^,]*)|("[^"]+")' '{print $8, $19}' spotify_top_songs_audio_features.csv | head
+  384  awk '{print $8, $19}' spotify_top_songs_audio_features.csv | head
+  385  awk -F ', ' '{print $8, $19}' spotify_top_songs_audio_features.csv | head
+  386  awk -F ', ' '{print $8, $19}' spotify_top_songs_audio_features.csv
+  387  awk -F ', ' '{print $8, $19}' spotify_top_songs_audio_features.csv > danceability_plot.csv 
+  388  awk -F ', ' '{print $8, $19}' spotify_top_songs_audio_features.csv | sort -n | head
+  389  awk -F ', ' '{print $8 "," $19}' spotify_top_songs_audio_features.csv | sort -n | head
+  390  awk -F ', ' '{print $8 ", " $19}' spotify_top_songs_audio_features.csv | sort -n -k2 | head
+  391  awk -F ', ' '{print $8 ", " $19}' spotify_top_songs_audio_features.csv | sort -n -k2 -r | head
+  392  awk -F ', ' '{print $8 ", " $19}' spotify_top_songs_audio_features.csv | sort -n -k2 -r | head > danceability_plot.csv 
+  393  awk -F ', ' '{print $9 ", " $19}' spotify_top_songs_audio_features.csv | sort -n -k2 -r | head > energy_plot.csv
+  394  awk -F ', ' '{print $16 ", " $19}' spotify_top_songs_audio_features.csv | sort -n -k2 -r > tempo_plot.csv
+  395  awk -F ', ' '{print $8 ", " $19}' spotify_top_songs_audio_features.csv | sort -n -k2 -r > danceability_plot.csv 
+  396  awk -F ', ' '{print $9 ", " $19}' spotify_top_songs_audio_features.csv | sort -n -k2 -r > energy_plot.csv
+  397  awk -F ', ' '{print $15 ", " $19}' spotify_top_songs_audio_features.csv | sort -n -k2 -r > loudness_plot.csv
+  398* awk -F ', ' '{print $17 ", " $19}' spotify_top_songs_audio_features.csv > duration_plot.csv
+  399  head duration_plot.csv 
+  400  awk -F ', ' '{print $15 ", " $19}' spotify_top_songs_audio_features.csv | head
+  401  awk -F ', ' '{print $15 ", " $19}' spotify_top_songs_audio_features.csv | awk -f ', ' 'NR == 1; NR > 1 {print $1 ", " $2}'
+  402  awk -F ', ' '{print $15 ", " $19}' spotify_top_songs_audio_features.csv | awk -F ', ' 'NR == 1; NR > 1 {print $1 ", " $2}'
+  403  awk -F ', ' '{print $15 ", " $19}' spotify_top_songs_audio_features.csv | awk -F ', ' 'NR == 1; NR > 1 {print $1 ", " $2}' | head
+  404  awk -F ', ' '{print $15 ", " $19}' spotify_top_songs_audio_features.csv | awk -F ', ' 'NR == 1; NR > 1 {print $1 ", " $2 | "sort -n -k2 -r"}' | head
+  405  awk -F ', ' '{print $15 ", " $19}' spotify_top_songs_audio_features.csv | awk -F ', ' 'NR == 1; NR > 1 {print $1 ", " $2 | "sort -n -k2 -r"}' > loudness_plot.csv 
+  406  awk -F ', ' '{print $8 ", " $19}' spotify_top_songs_audio_features.csv | awk -F ', ' 'NR == 1; NR > 1 {print $1 ", " $2 | "sort -n -k2 -r"}' > danceability_plot.csv 
+  407  awk -F ', ' '{print $9 ", " $19}' spotify_top_songs_audio_features.csv | awk -F ', ' 'NR == 1; NR > 1 {print $1 ", " $2 | "sort -n -k2 -r"}' > energy_plot.csv 
+  408  awk -F ', ' '{print $16 ", " $19}' spotify_top_songs_audio_features.csv | awk -F ', ' 'NR == 1; NR > 1 {print $1 ", " $2 | "sort -n -k2 -r"}' > tempo_plot.csv 
+  409  awk -F ', ' '{print $17 ", " $19}' spotify_top_songs_audio_features.csv | awk -F ', ' 'NR == 1; NR > 1 {print $1 ", " $2 | "sort -n -k2 -r"}' > duration_plot.csv 
+  410  head duration_plot.csv 
+  411  head tempo_plot.csv 
+  412  ls
+  413  vi plots.txt 
+  414  history > cmds.log

@@ -1,0 +1,22 @@
+1. Filter data for the loudness plot
+------------------------------------
+awk -F ', ' '{print $15 ", " $19}' spotify_top_songs_audio_features.csv | awk -F ', ' 'NR == 1; NR > 1 {print $1 ", " $2 | "sort -n -k2 -r"}' > loudness_plot.csv
+
+2. Filter data for the danceability plot
+----------------------------------------
+awk -F ', ' '{print $8 ", " $19}' spotify_top_songs_audio_features.csv | awk -F ', ' 'NR == 1; NR > 1 {print $1 ", " $2 | "sort -n -k2 -r"}' > danceability_plot.csv
+
+
+3. Filter data for the tempo plot
+---------------------------------
+awk -F ', ' '{print $16 ", " $19}' spotify_top_songs_audio_features.csv | awk -F ', ' 'NR == 1; NR > 1 {print $1 ", " $2 | "sort -n -k2 -r"}' > tempo_plot.csv
+
+
+4. Filter data for the energy plot
+----------------------------------
+awk -F ', ' '{print $9 ", " $19}' spotify_top_songs_audio_features.csv | awk -F ', ' 'NR == 1; NR > 1 {print $1 ", " $2 | "sort -n -k2 -r"}' > energy_plot.csv
+
+5. Filter data for the duration plot
+------------------------------------
+awk -F ', ' '{print $17 ", " $19}' spotify_top_songs_audio_features.csv | awk -F ', ' 'NR == 1; NR > 1 {print $1 ", " $2 | "sort -n -k2 -r"}' > duration_plot.csv
+
