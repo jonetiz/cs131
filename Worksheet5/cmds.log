@@ -1,0 +1,76 @@
+  332  cd Worksheet5
+  333  ls
+  334  mk ws5.sh
+  335  vi ws5.sh
+  336  ./ws5.sh
+  337  echo $PATH
+  338  vi ws5.sh
+  339  ls -l
+  340  chmod 777 youtube.csv 
+  341  ls -l
+  342  chmod 777 ws5.sh 
+  343  ls -l
+  344  ./ws5.sh 
+  345  vi ws5.sh 
+  346  ./ws5.sh 
+  347  vi ws5.sh 
+  348  ./ws5.sh 
+  349  vi ws5.sh 
+  350  ./ws5.sh 
+  351  vi ws5.sh 
+  352  ./ws5.sh 
+  353  vi ws5.sh 
+  354  ./ws5.sh 
+  355  vi ws5.sh 
+  356  cd ..
+  357  cd Worksheet4
+  358  ls
+  359  vi ws4.txt 
+  360  cd ..
+  361  cd ws3
+  362  cd Worksheet3
+  363  ls
+  364  vi ws3.txt 
+  365  cd ..
+  366  cd Worksheet5
+  367  vi ws5.txt
+  368  ls
+  369  cat youtube.csv | grep 'United States'
+  370  vi ws5.sh 
+  371  ./ws5.sh 
+  372  vi ws5.sh 
+  373  ./ws5.sh 
+  374  vi ws5.sh 
+  375  ./ws5.sh 
+  376  vi ws5.sh 
+  377  ./ws5.sh 
+  378  vi ws5.sh 
+  379  ./ws5.sh 
+  380  vi ws5.sh 
+  381  ./ws5.sh 
+  382  vi ws5.sh 
+  383  ./ws5.sh 
+  384  ls
+  385  head Music.txt 
+  386  rm *.txt
+  387  ls
+  388  vi ws5.sh 
+  389  ./ws5.sh 
+  390  mkdir United States
+  391  ./ws5.sh 
+  392  ls
+  393  rm United States
+  394  rmdir United States
+  395  mkdir "United States"
+  396  ./ws5.sh 
+  397  cd United\ States/
+  398  ls
+  399  wc Music.txt 
+  400  wc Gaming.txt 
+  401  wc Entertainment.txt 
+  402  wc Comedy.txt 
+  403  cd ..
+  404  vi ws5.txt
+  405  vi ws5.txt
+  406  cd ..
+  407  history > cmds.log
